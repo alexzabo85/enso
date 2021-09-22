@@ -4,12 +4,12 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/alex639hz/enso.git"
+    "url": "https://github.com/alexzabo85/enso-exam.git"
   },
   "scripts": {
-    "fs-server": "node ./server/write",
+    "fs-server": "node ./server/utils/write",
     "redis": "redis-server",
-    "dev": "clear && concurrently --kill-others \"npm run fs-server\" \"npm run server\"",
+    "dev": "clear && concurrently --kill-others \"npm run redis\" \"npm run fs-server\" \"npm run server\"",
     "server": "nodemon",
     "start": "set NODE_ENV=production &&  node ./server/write &&  node ./bin/www",
     "kill": "kill $(lsof -t -i:8080)",

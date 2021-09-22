@@ -9,9 +9,7 @@
 - Postman
   
 
-# how to run
-
-## Environment 
+## prerequisites  
 - make sure redise running on default port 6379
 - make sure mongoDB running on default port 27017
 
