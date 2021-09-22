@@ -8,39 +8,52 @@
 - vs-code
 - Postman
   
+# missing
+- typescript (see links section)
+- docker (see links section)
+
 
 ## prerequisites  
 - make sure redise running on default port 6379
 - make sure mongoDB running on default port 27017
 
-in terminal run:
-> $ git clone ___
+## install  
+in a terminal shell run: 
+> $ git clone https://github.com/alexzabo85/enso-exam.git
 
-> $ cd ./___
+> $ cd ./enso-exam
 
 > $ npm i
 
-## Hot to run
-terminanl-1 in ROOT folder run: 
-> npm run redis 
- 
-terminanl-2 in ROOT folder run: 
+# How to run
+In a terminanl (at ROOT folder run): 
 > npm run dev 
+ 
+# Swagger link 
+> http://localhost:3000/api-docs/
+ 
 
-## tested in
+## tested with
 - Postman
 - Jest 
 
-run auto-test in ROOT folder
+in ROOT folder
 > npm run test
 
-Or use postman by import a  collection from root folder 
-"./postman_collection.json"
+Or
+
+Use exported postman collection titled: ```postman_collection.json``` :
+- auth/signup (make sure to include the credentials in requet body)
+- auth/signin (make sure to include the credentials in requet body)
+- image/list (make sure to include query parameters)
+- deployment/create (make sure to include URL parameter) ```{{site}}/api/deployment/6138a23408f6eebaad3806fc```
+- deployment/count 
+- deployment/combi 
 
 
 # links
 
-## install redis 
+## redis 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04
 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
